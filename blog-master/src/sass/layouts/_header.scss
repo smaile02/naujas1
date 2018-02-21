@@ -1,0 +1,46 @@
+header{
+    background: #fff;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacts-menu{
+        box-shadow: 0 5px 15px #ccc;
+    }
+    .social{
+        .fa{
+            font-size: 22px;
+            margin-right: 10px;
+        }
+    }
+    .contacts{
+        display: flex;
+        align-items: center;
+        height: 45px;
+        .fa{
+            margin-left: 20px;
+            font-size: 22px;
+            margin-right: 5px;
+        }
+        p{
+            @include text-regular;
+        }
+        a{
+            @include text-legular;
+        }
+    }
+    nav{
+        a{
+            @include text-regular;
+            text-transform: uppercase;
+            margin-left: 30px;
+            &:hover{
+                color: $color-blue;
+            }
+        }
+        img{
+            margin: 10px 0;
+        }
+    }
+}
